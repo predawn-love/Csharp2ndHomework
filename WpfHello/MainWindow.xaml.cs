@@ -26,7 +26,7 @@ namespace WpfHello
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Fuck you");
+            MessageBox.Show("Hello World!");
         }
     }
 }

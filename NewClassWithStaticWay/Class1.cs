@@ -8,6 +8,6 @@ namespace NewClassWithStaticWay
 {
     class Class1
     {
-        public static void qwe(string[] strs) => Console.WriteLine("hello world");
+        public static void qwe(string[] strs) => Console.WriteLine("Hello World!");
     }
 }

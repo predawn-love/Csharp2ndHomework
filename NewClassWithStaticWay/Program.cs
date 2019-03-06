@@ -11,7 +11,7 @@ namespace NewClassWithStaticWay
         static void Main(string[] args)
         {
             Class1.qwe(args);
-
+            Console.Read();
         }
     }
 }
