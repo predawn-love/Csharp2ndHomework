@@ -18,7 +18,14 @@ namespace WindowsForms
         }
         void World(object sender, System.EventArgs e)
         {
-            MessageBox.Show("Hello World!");
+            string[] pargs = Environment.GetCommandLineArgs();
+            if (pargs.Length > 2)
+            {
+                MessageBox.Show($"Hello I'm {pargs[1]} {pargs[2]}");
+            } else if (pargs.Length == 2)
+            {
+                MessageBox.Show($"{pargs[1]} loves the World.");
+            }else MessageBox.Show($"Hello World!");
         }
         public void Init()
         {

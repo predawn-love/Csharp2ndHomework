@@ -10,7 +10,7 @@ namespace NewClassWithStaticWay
     {
         static void Main(string[] args)
         {
-            Class1.qwe(args);
+            Class1.Output(args);
             Console.Read();
         }
     }

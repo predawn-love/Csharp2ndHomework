@@ -26,7 +26,19 @@ namespace WpfHello
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            MessageBox.Show("Hello World!");
+            string[] pargs = Environment.GetCommandLineArgs();
+            if (pargs.Length > 2)
+            {
+                MessageBox.Show($"Hello I'm {pargs[1]} {pargs[2]}.");
+            }
+            else if(pargs.Length == 2)
+            {
+                MessageBox.Show($"Hello I'm {pargs[1]} .");
+            }else MessageBox.Show("Hello World!");
         }
+        //void World(object sender, System.EventArgs e)
+        //{
+            
+       // }
     }
 }
